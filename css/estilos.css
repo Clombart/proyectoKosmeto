@@ -1,0 +1,536 @@
+/*Empieza Estilos generales*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: auto;
+    background-color: whitesmoke;
+    text-align: center;
+    font-family: 'Klee One', cursive;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: auto;
+    color: rgb(26, 150, 155);
+}
+
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: auto;
+    color: rgb(26, 150, 155);
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgb(26, 150, 155);
+}
+
+h6{
+    font-size: 0.75rem;
+    font-weight: 400; 
+    margin:auto;
+    padding-bottom: 1rem;
+} 
+
+.fuenteAdicional{
+    font-family: 'Kaushan Script', cursive;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: justify;
+    color: rgb(26, 150, 155);
+}
+
+.boton {
+    color: rgb(26, 150, 155);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: 'Klee One', cursive;
+    background-color: white;
+    margin: 1rem auto;
+    padding:0.15rem 0.75rem;
+    border: rgb(24, 127, 131) 1px solid;
+    border-radius: 20px;
+}
+.boton:hover{
+    background: rgb(21,104,90);
+    color:white;
+    transform: scale(1.2,1.2);
+    transition: .3s ease-in-out;
+}
+
+a{
+    text-decoration: none;
+}
+/*Termina Estilos generales*/
+
+
+/*Empieza Header*/
+header{
+    background-color: whitesmoke;
+    position: sticky;
+    top: 0;
+    left:0;
+    z-index: 10; 
+}
+
+#logo{
+    height: 12rem;
+}
+
+.menuPpal{ /*header nav ul*/
+    background-color: rgb(120,199,180);
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    border-top: solid 0.15vw whitesmoke;
+    border-bottom: solid 0.15vw whitesmoke;
+}
+
+header li{
+    width: 100%;
+    height: 100%;
+    border-left: solid 0.15vw white; 
+    display:flex;
+    flex-wrap: nowrap;
+    justify-content: center;  
+}
+
+header a{
+    width: 100%;
+    height: 95%;
+    color: white;
+    font-size: 1.5rem;
+    align-self: center;
+}
+
+header nav ul li a:hover{
+    background-color: whitesmoke;
+    color: rgb(120,199,180);    
+}
+/*Termina Header*/
+
+
+/*Empieza Index*/
+.portada{
+    display:flex;
+    width: 100%;
+    height: auto;
+    background:linear-gradient(rgb(120,199,180),rgb(182,238,165));  
+}
+
+.contenedorFoto{
+    height:auto;
+    margin:0; 
+}
+
+.fotoPor{
+    width:100%;
+}
+
+.portada__texto{
+    width:50%;
+    margin-right:3%;
+    color:white;
+    font-size: 2.1rem;
+    text-align:right;
+    font-weight: 400;
+    line-height: 2.7rem;
+    letter-spacing: 0.1rem;
+    text-shadow: rgb(116, 173, 164) 1px 1px;
+}
+
+#misVisVal{
+    margin-top: 3vw;
+    margin-bottom: 1vw;
+    display: flex;
+    justify-content: center;
+}
+
+.mmvLogos{
+    height: 7rem;
+}
+
+.contenedorMiViVa{
+    width: 15%;
+    height: auto;
+    margin: 2%;
+}
+
+.contenedorMiViVa h2{
+    margin-bottom: 7%;
+}
+
+.contenedorPadreMarcas{
+    width: 60%;
+    margin: 3vw auto;
+    font-style: oblique;
+}
+
+.contenedorHijoMarcas{
+    width: 100%;
+    margin: auto;
+    padding-top: 2vw;
+}
+
+.marcas{
+    height: 10rem;
+    border-radius: 100%;
+}
+/*Termina Index*/
+
+
+/*Empieza Tratamientos*/
+.contenedoresTtos{
+    width: 70%;
+    height: auto;
+    margin: 2vw auto 6rem;
+}
+
+.contenedoresTtos section{
+    width: 70%;
+    margin: 2vw auto;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: rgb(120,199,180) solid 2px;
+}
+
+.contenedorTtos div{
+    width: 50%;
+    height: 100%;
+}
+
+.contenedoresTtos section h3{
+    font-weight: 400;
+    font-size: 25px;
+    font-family: 'Kaushan Script', cursive;
+    text-align: left;
+    margin: 0 0 5%;
+    width: 90%;  
+}
+
+.contenedoresTtos section p{
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left;
+    color: rgb(26, 150, 155);
+    width: 90%;
+}
+
+.ttoImagen{
+    width: 350px;
+    margin: 2vw;
+}
+/*Termina Tratamientos*/
+
+
+/*Empieza Sobre mi*/
+.grilla{
+    display:grid;
+    width: 100%;  
+    grid-template-columns: 43% 40%;
+    grid-template-rows:20% 80%;
+    grid-template-areas: "img titulo" 
+                         "img texto";
+    column-gap: 3%;
+    justify-content: center;
+    margin:3% 0;
+    animation-name: aparece;
+    animation-duration:3s;
+}
+
+.fotoGrilla{
+    width: 100%;
+    grid-area: img;
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    filter:drop-shadow(0px 0px 10px rgb(11, 51, 53));
+}
+
+#titulo{
+    grid-area: titulo;
+    text-align: left;
+    margin:0;
+    padding-top:1rem;
+}
+
+.descripcion{
+    grid-area: texto;
+    list-style-type: disc;
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-align: left;
+    color: rgb(24, 127, 131);
+    width: 90%;
+    letter-spacing: 1px;
+    margin: 2% auto;
+}
+
+.texto li{
+    margin-bottom:1rem;
+}
+
+@keyframes aparece{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+/*Termina Sobre mi*/
+
+
+/*Empieza Galería*/
+.galeria{
+    background-color:whitesmoke;
+    width: 100%;
+    padding:1rem;  
+}
+
+.row{
+    display:flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex:25%;
+    padding:5px;
+}
+
+.column img{
+    margin-top:5px;
+    width: 100%;
+}
+
+.column img:hover{
+    transform:scale(1.5,1.5);
+    filter:drop-shadow(0px 0px 15px rgb(11, 51, 53));
+}
+/*Termina Galería*/
+
+
+/*Empieza Productos*/
+
+.productosImg{
+    max-width: 90%;
+    margin:1rem;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-padre{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+}
+
+.hijo{
+    margin: 2rem 0rem;
+    border: rgb(120,199,180) 0.15rem solid; 
+    border-bottom-right-radius: 5%;
+    border-top-left-radius: 5%;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hijo h3{
+    height: 30%;
+    padding-top: 10%;
+}
+
+#hijoMod{
+    height: 30%;
+    padding-top: 5%;
+}
+
+.hijo p{
+    text-align: center;
+}
+/*Termina Productos*/
+
+
+/*Empieza Contactos*/
+.grillaContacto{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows:18% 82%;
+    grid-template-areas: "mapa titulo"
+                         "mapa formulario";
+    margin:3% auto;
+    justify-content: center; 
+    align-content: center;
+}
+
+.mapa{
+    grid-area: mapa;
+    width:100%;
+    border-top-left-radius:5%;
+}
+
+.titulo{
+    grid-area: titulo;
+    display: block;
+    color:whitesmoke;
+    width: 100%;
+    background-color: rgb(156,218,177);
+    margin:0 auto;
+    padding: 0.5rem 0;   
+}
+
+.formulario{
+    grid-area: formulario;
+    border-bottom-right-radius: 5%;
+    background-color: rgb(156,218,177);
+}
+
+.nae{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    margin:0.5rem auto;
+}
+
+.texto{
+    width: 20%;
+    font-size: 1rem;
+    font-family: 'Klee One', cursive;
+    padding:0.25rem;
+    margin:0.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: rgb(24, 127, 131) 1px solid;
+}
+
+.texto--email{
+    width: 40%
+}
+
+.menuDesplegable{
+    display:flex;
+    justify-content: center;
+    width: 80%;
+    font-size: 1rem;
+    color:white;
+    font-family: 'Klee One', cursive;
+    margin:0.5rem auto;
+}
+
+.menuDesplegable p{
+    padding-right: 0.5rem;
+    color: white;
+}
+
+.menuDesplegable select{
+    font-size: 1rem;
+    font-family: 'Klee One', cursive;
+    color: rgb(24, 127, 131);
+    padding-left: 0.5rem;
+    border-radius: 10px;
+    border: rgb(24, 127, 131) 1px solid;
+}
+
+.comentarios{
+    width: 100%;
+    margin: 1rem auto;
+}
+
+#comentarios{
+    width: 88%;
+    height: 5%;
+    font-size: 1rem;
+    font-family: 'Klee One', cursive;
+    padding-left: 1rem;
+    padding-top: 0.5rem;;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: rgb(24, 127, 131) 1px solid;
+}
+
+::placeholder{
+    color:rgb(26, 150, 155);
+    opacity:1;
+}
+
+.newsletter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color:white;
+    font-family: 'Klee One', cursive;
+    margin: 1rem auto;
+}
+
+.contenedorBotones{
+    display:flex;
+    justify-content: space-around;   
+}
+/*Termina Contactos*/
+
+
+/*Empieza Footer*/
+footer{
+    background:linear-gradient(rgb(120,199,180),rgb(182,238,165));
+    border-top: solid 0.15vw white;   
+}
+
+footer ul{
+    display:flex;
+    justify-content: center;
+    list-style: none; 
+}
+
+.iconos{
+    font-size: 2rem;
+    color:white;
+    margin:1rem;
+}
+
+#face:hover{
+    color: rgb(59,89,152);
+}
+
+#ig:hover{
+    color: #C13584;
+}
+
+#wa:hover{
+    color: rgb(37,211,102);
+}
+
+#mail:hover{
+    color: rgb(0,0,255);
+}
+
+#map:hover{
+    color: rgb(219,68,55);
+}
+/*Termina Footer*/
