@@ -1,0 +1,263 @@
+@import "_variables";
+
+#tituloOculto{
+    display: none;
+}
+        
+.portada{
+    display:flex;
+    flex-direction:column;
+    width: 100%;
+    margin:1rem 0;
+
+    div.active{
+        border:none
+    }
+    div{
+        background:linear-gradient($colorUno,$colorDos); 
+        width:100%;
+
+        p{
+            font-family: $fontSpecial;
+            padding: 1rem;
+            margin:1rem 0;
+            color:$colorCero;
+            font-size: 1.75rem;
+            font-weight: 400;
+            line-height: 2rem;
+            letter-spacing: 0.1rem;
+            text-shadow: $colorSombra 1px 1px;
+        }
+    }
+}
+
+.alineacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    div.contenedormvv{
+        margin: 4rem 0;
+        width:70%;
+        display: flex;
+        flex-direction: column;
+        border:$colorCuatro 0.2rem double;
+        border-top-left-radius:20px;
+        border-bottom-right-radius:20px; 
+        
+        div{
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 1.5rem 0;
+            
+            img{
+                width: 7rem;
+                margin: 1rem;
+            }
+
+            h2{
+                font-size: 1.5;
+                margin: 0.2rem 0;
+            }
+
+            p{
+                display: block;
+                width:80%;
+                font-size: 1rem;
+                text-align: justify;
+                margin:0.5rem;
+            }
+        }
+    }
+    .contenedorMarcas{
+        width: 80%;
+        flex-wrap: nowrap;
+        margin: 2rem auto;
+        font-size: 1.75rem;
+        font-style: oblique;
+
+        div{
+            width: 100%;
+            margin: auto;
+            padding: 1rem 0;
+
+            img{
+                height: 6rem;
+                border-radius: 100%;
+                margin:1rem;
+            }
+        }
+    }
+}
+
+
+/*Empieza MediaQuery min 599px*/
+
+@media only screen and (min-width: 599px) {
+
+    .portada{
+        div{
+            p{ 
+                padding: 1.5rem;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.2rem;
+                text-shadow: $colorSombra 1px 1px;
+            }
+        }  
+    }
+
+    .alineacion{ 
+        div.contenedormvv{
+            div{
+                img{
+                    width: 7rem;
+                    margin: 1rem;
+                }
+                h2{
+                    font-size: 2rem;
+                    margin: 0.2rem 0;
+                }
+                p{
+                    font-size: 1.25rem;
+                    margin:1rem;
+                }
+            }
+        }
+        .contenedorMarcas{
+            div{
+                padding: 1.5rem 0;
+                img{
+                    height: 7rem;
+                    margin:2rem;
+                }
+            }
+        }
+    }
+}
+/*Termina MediaQuery min 599px*/
+
+
+/*Empieza MediaQuery min 768px*/
+@media only screen and (min-width: 768px) {
+
+    .portada{
+        div{
+            p{ 
+                font-size: 2.5rem;
+                line-height: 3rem;
+                letter-spacing: 0.3rem;
+                text-shadow: $colorSombra 1.5px 1.5px;
+            }
+        } 
+    }
+
+    .alineacion{
+        div.contenedormvv{
+            div{
+                img{
+                    width: 8rem;
+                    margin: 1.5rem;
+                }
+                h2{
+                    font-size: 2.25rem;
+                    margin: 0.2rem 0;
+                }
+                p{
+                    font-size: 1.5rem;
+                    margin:1rem;
+                }
+            }
+        }
+        .contenedorMarcas{
+            div{
+                padding: 2rem 0;
+                img{
+                    height: 8rem;
+                    margin:2.5rem;
+                }
+            }
+        }
+    }  
+}
+/*Termina MediaQuery min 768px*/
+
+
+/*Empieza MediaQuery min 1023px*/
+@media only screen and (min-width: 1023px) {
+
+    .portada{
+        flex-direction:row;
+        align-items: center;
+        background:linear-gradient($colorUno,$colorDos);
+       
+        div{
+            background:none;
+            
+            p{  
+                font-size: 2rem;
+                line-height: 2.5rem;
+                letter-spacing: 0.2rem;
+                text-shadow: $colorSombra 1.5px 1.5px;
+            }
+        }
+    }
+
+    .alineacion{
+        div.contenedormvv{
+            flex-direction: row;
+            margin: 3rem 0;
+            width: 75%;
+            border:$colorCuatro 0.4rem double;
+            align-items: flex-start;
+            
+            div{
+                
+                img{
+                    width: 8rem;
+                    margin: 1.2rem;
+                }
+                h2{
+                    font-size: 1.75rem;
+                    margin: 0.2rem 0;
+                }
+                p{
+                    font-size: 1.25rem;
+                    margin:1rem;
+                }
+            }
+        }
+
+        .contenedorMarcas{
+            width: 90%;
+            div{
+                width: 90%;
+                padding: 1rem 0;
+                img{
+                    height: 9rem;
+                    margin:2.5rem;
+                }
+            }
+        }
+    } 
+}
+/*Termina MediaQuery min 1023px*/
+
+/*Empieza MediaQuery min 1400*/
+@media only screen and (min-width: 1400px) {
+    .portada{
+        div{
+            p{  
+                font-size: 2.5rem;
+                line-height: 2.75rem;
+                letter-spacing: 0.3rem;
+                text-shadow: $colorSombra 1.5px 1.5px;
+            }
+        }
+    }
+}
+
+/*Termina MediaQuery min 1400*/

@@ -1,0 +1,51 @@
+footer{
+    background:linear-gradient($colorUno,$colorDos);
+    border-top: $borderDesign 0.5rem $colorUno;   
+    nav{
+        ul{
+            display:flex;
+            justify-content: center;
+            list-style: none;
+            margin:0;
+            padding:0; 
+            li{
+                a{
+                    i{font-size: 2rem;
+                        color:$colorCero;
+                        margin:1rem;
+                        transition: 1s all;
+
+                    }
+                }
+            }
+        }
+    }
+    h6{
+        font-size: 0.75rem;
+        font-weight: 400; 
+        padding-bottom: 0.5rem;
+        text-align: center;
+        line-height: 1rem;
+    } 
+
+}
+
+#face:hover{
+    color:$colorFace;
+}
+
+#ig:hover{
+    color: $colorIg;
+}
+
+#wa:hover{
+    color: $colorWa;
+}
+
+#mail:hover{
+    color: $colorMail;
+}
+
+#map:hover{
+    color: $colorMaps;
+}

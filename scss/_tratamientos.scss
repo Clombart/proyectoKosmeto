@@ -1,0 +1,166 @@
+div.contenedorPadre{
+    display: flex; 
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    h1{
+        color: $colorCero;
+        padding:1rem 0;
+        display: inline-block;
+        width: 100%;
+        margin-bottom:1rem;
+        background-color: $colorUno;
+    }
+    
+    div.contenedorHijo{
+        display: flex; 
+        flex-direction: column;
+        align-content: center; 
+        align-items: center;
+
+        div.contenedoresTtos{
+            display: flex; 
+            flex-direction: column; 
+            margin: 1.5rem auto; 
+
+            h2.subtitulo{
+                font-size: 1.75rem;
+            }
+
+            section{
+                width:70%;
+                margin: 1rem auto;
+                display: flex; 
+                flex-direction: column; 
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                border: $colorCuatro double 0.25rem;
+                
+                img{
+                    width: 70%;
+                    margin:1.25rem auto ;
+                }
+
+                div{
+                    margin: 1rem auto;
+                    h3{
+                        font-weight: 400;
+                        font-size: 1.5rem;
+                        font-family: $fontSpecial;
+                    }
+
+                    p{
+                        font-weight: 600;
+                        font-size: 1rem;
+                        color: $colorTres;
+                        padding:1.5rem;
+                        text-align: center;
+                        margin:0;
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+/*Empieza MediaQuery min 768*/
+@media only screen and (min-width: 768px) {
+    div.contenedorPadre{
+        h1{
+            display:none;
+        }
+        div.contenedorHijo{
+            div.contenedoresTtos{
+                h2.subtitulo{
+                    font-size: 2rem;
+                }
+                section{
+                    div{
+                        h3{
+                            font-size: 1.75rem;
+                        }
+
+                        p{
+                            font-size: 1.25rem;
+                        }
+                    }
+                }    
+            }
+        }
+    }
+}
+/*Termina MediaQuery min 768*/
+
+/*Empieza MediaQuery min 992*/
+@media only screen and (min-width: 992px) {
+    div.contenedorPadre{
+        div.contenedorHijo{
+            div.contenedoresTtos{
+                h2.subtitulo{
+                    font-size: 2.5rem;
+                }
+                section{
+                    width:70%;
+                    margin: 1rem auto;
+                    flex-direction: row; 
+                    align-items: center;
+                   
+                    img{
+                        width: 50%;
+                        margin: 1rem;
+                    }
+
+                    div{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 1rem auto;
+
+                        h3{
+                            margin:1rem;
+                            font-size: 2rem;
+                        }
+                        
+                        p{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+/*Termina MediaQuery min 992*/
+
+/*Empieza MediaQuery min 1200*/
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+    div.contenedorPadre{
+        div.contenedorHijo{
+            div.contenedoresTtos{
+                h2.subtitulo{
+                    font-size: 2.5rem;
+                }
+                section{
+                    width:60%;
+                    margin: 1.5rem auto;
+                   
+                    img{
+                        width: 50%;
+                        margin: 2rem;
+                    }
+
+                    div{ 
+                        margin: 1.5rem auto;
+
+                        h3{
+                            margin:1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }  
+}
+/*Termina MediaQuery min 1200*/

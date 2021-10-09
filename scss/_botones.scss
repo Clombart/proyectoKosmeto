@@ -1,0 +1,36 @@
+@import "_variables";
+
+.botonComprar{
+    color: $colorCuatro;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: $fontPpal;
+    background-color: $colorCero;
+    margin: 1rem 2rem;
+    padding:0.15rem 0.75rem;
+    border: $colorCuatro 1px $borderDesign;
+    border-radius: 20px;
+}
+
+.botonComprar:hover{
+    background-color: $colorCuatro;
+    color:$colorCero;
+    transform: scale(1.2);
+    transition: .3s ease-in-out;
+}
+
+.botonContacto{
+    @extend .botonComprar;
+    background-color:$colorBgContacto;
+    margin: 1rem auto;
+    
+}
+
+.botonContacto:hover{
+    @extend .botonComprar:hover;
+    color:$colorBgContacto;
+    transition: .3s ease-in-out;
+ 
+}
