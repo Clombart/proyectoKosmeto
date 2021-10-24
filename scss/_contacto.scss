@@ -8,34 +8,27 @@ div.formato{
 .form{
     width: 90%;
     line-height: 2rem;
-    border: $colorCuatro 1px solid;
+    border: $colorUno 1px solid;
     border-bottom-right-radius: 10px;
     border-top-left-radius: 10px;
+    
 }
 
 div.padre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
-    h1{
-        color: $colorCero;
-        padding:1rem 0;
-        display: inline-block;
-        width: 100%;
-        margin-bottom:1rem;
-        background-color: $colorUno;
-        text-align: center;
-    }
 
     div.hijo{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
-    
+        margin: 2rem 0;
+        
         form{
-            width: 95%;
+            width: 100%;
+            height: 100%;
             background-color: $colorBgContacto;
             border-bottom-right-radius: 20px;
             border-top-left-radius: 20px;
@@ -43,20 +36,22 @@ div.padre{
             display: flex;
             flex-direction: column;
             align-items: center;
-            margin:1rem;
         }
         
         div{
             display:flex;
             justify-content: center;
             align-items: center; 
+            width: 100%;
         }
 
         div.map{
-            width: 95%;
+            width: 100%;
+            height: 100%;
             margin:1rem;
             justify-content: center;
             iframe.mapa{
+                display: block;
                 width: 100%;
                 height: 250px;
                 margin:1rem auto;
@@ -71,24 +66,19 @@ div.padre{
 @media only screen and (min-width: 768px) {
     div.padre{
         margin: 2rem; 
+        margin:1.5rem;
         h1{
             display:none;
         }
-    }
-} 
-/*Termina MediaQuery min 768*/
-
-
-/*Empieza MediaQuery min 992*/
-@media only screen and (min-width: 992px) {
-   
-    div.padre{
         div.hijo{
             display: flex;
             flex-direction: row;
-            flex-wrap: nowrap;         
+            flex-wrap: nowrap;      
             width: 100%;
-            padding:2rem;
+            height: 630px;
+            box-shadow: 0 0 .5rem rgba(0,0,0, .5);
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
 
             form{
                 width: 100%;
@@ -97,8 +87,8 @@ div.padre{
                 border-top-left-radius: 20px;
                 background-color:$colorBgContacto;
                 display: flex;
-                flex-direction: column;
-                margin:0;     
+                flex-direction: column;    
+                justify-content: center;
             }
 
             div{
@@ -109,21 +99,22 @@ div.padre{
             div.map{
                 width: 100%;
                 margin:0;
-                
+                height: 100%;
                
                 justify-content: center;
                 iframe.mapa{
                     width: 100%;
-                    height: 37.2rem;
+                    height: 100%;
                     border-bottom-right-radius:20px;
                     border-top-left-radius:0px;
                 }
             }
         }
     }
-}
-/*Termina MediaQuery min 992*/
-    
+}   
+/*Termina MediaQuery min 768*/
+
+
 
 /*Empieza MediaQuery min 1200*/
 @media only screen and (min-width: 1200px) {

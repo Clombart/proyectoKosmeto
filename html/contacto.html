@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Sección donde podés comunicarte con nosotros y enviarnos tus dudas o consultas">
   <meta name="keywords" content="MENSAJE, COMENTARIO, DIRECCION, RIO NEGRO, ARGENTINA,">
-  <link rel="stylesheet" href="../css/pruebacss.css">
+  <link rel="stylesheet" href="../css/kosmetocss.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
@@ -44,7 +45,7 @@
       <h1>Contacto</h1>
       <div class="hijo">
         <form>
-          <div class="row mb-3">
+          <div class="row my-1">
             <div class="mb-1 col-11 col-sm-11 col-md-9 col-lg-6 col-xl-6 p-2 formato">
               <label for="nameInput" class="form-label">Nombre</label>
               <input type="text" class="form ps-2" id="nameInput" placeholder="Ana">
@@ -64,24 +65,26 @@
             <textarea class="form ps-2" id="textArea" cols="20" rows="5" placeholder="..."></textarea>
           </div>
  
-          <div class="form-check mb-3 d-flex">
+          <div class="form-check m-3">
             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
             <label class="form-check-label" for="flexCheckDefault">¿Querés recibir nuestras novedades?</label>
           </div>
   
-          <div class="container d-flex">
-            <button type="reset" class="botonContacto">borrar formulario</button>
+          <div class="container d-flex justify-content-evenly px-3 my-3">
+            <button type="reset" class="botonContacto">borrar</button>
             <button type="submit" class="botonContacto">enviar</button>
           </div>
         </form>
 
-        <div class="map">
+        <div class="map" id="ubicacion">
           <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3101.419072106299!2d-67.830408!3d-38.982931!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a231286c17105%3A0x72037af60f0c305a!2sAnt%C3%A1rtida%20Argentina%20535%2C%20R8328%20Allen%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1630346705602!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div> 
-    <script src="https://kit.fontawesome.com/2a2b0023e5.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>          
+
+    <div class="opacity-50">
+      <a href="#" class="top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
+    </div>
   </main>
   <!-- FIN DEL MAIN -->
 
@@ -89,16 +92,23 @@
   <footer>
     <nav>
       <ul>
-        <li><a href="https://www.facebook.com/kosmetoallen"><i id="face" class="fab fa-facebook iconos"></i></a></li>
-        <li><a href="https://www.instagram.com/kosmetoallen/?hl=es"><i id="ig" class="fab fa-instagram iconos"></i></a></li>
-        <li><a href="https://api.whatsapp.com/send?phone=542984673808&text=Kosmeto"><i id="wa" class="fab fa-whatsapp iconos"></i></a></li>
-        <li><a href="/html/contacto.html" target="_blank"><i id="mail" class="far fa-envelope iconos"></i></a></li>
-        <li><a href="html/contacto.html"><i id="map" class="fas fa-map-marker-alt iconos"></i></a></li>
-      </ul>      
+        <li><a href="https://www.facebook.com/kosmetoallen" target="_blank"><i id="face" class="fab fa-facebook"></i></a></li>
+        <li><a href="https://www.instagram.com/kosmetoallen/?hl=es" target="_blank"><i id="ig" class="fab fa-instagram"></i></a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=542984673808&text=Kosmeto" target="_blank"><i id="wa" class="fab fa-whatsapp"></i></a></li>
+        <li><a href="contacto.html"><i id="mail" class="far fa-envelope"></i></a></li>
+        <li><a href="contacto.html#ubicacion"><i id="map" class="fas fa-map-marker-alt"></i></a></li>
+      </ul>         
     </nav>
     <h6>Copiright 2021</h6>
   </footer>
   <!-- FIN DEL FOOTER -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://kit.fontawesome.com/2a2b0023e5.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>   
+
 </body>
 
 </html>

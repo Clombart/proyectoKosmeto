@@ -1,18 +1,29 @@
 {
-  "name": "Proyecto Kosmeto",
+  "name": "proyectokosmeto",
   "version": "1.0.0",
   "description": "Sitio web para consultorio de estética facial ubicado en Rio Negro, Argentina",
   "main": "index.js",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {
+    "node-scss": "^7.0.3",
+    "nodemon": "^2.0.14"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": 
-    "node-sass --include-path scss scss/prueba.scss css/pruebacss.css",
+    "node-sass --include-path scss scss/kosmeto.scss css/kosmetocss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Clombart/proyectoKosmeto.git"
   },
   "author": "Cecilia Lombart",
   "license": "ISC",
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "nodemon": "^2.0.13"
-  }
+  "bugs": {
+    "url": "https://github.com/Clombart/proyectoKosmeto/issues"
+  },
+  "homepage": "https://github.com/Clombart/proyectoKosmeto#readme"
 }

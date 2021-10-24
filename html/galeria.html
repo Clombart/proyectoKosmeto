@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Imágenes del antes, durante y después de los tratamientos: punta de diamante, hidratación, cryoterapia.">
     <meta name="keywords" content="DERMAPILING, MASAJE, CEJAS, LIFTING, PESTAÑAS">
-    <link rel="stylesheet" href="../css/pruebacss.css">
+    <link rel="stylesheet" href="../css/kosmetocss.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Kosmeto - Galería Fotográfica</title>
@@ -42,38 +43,134 @@
         <div class="contPadre">
             <h1>Galería</h1>
         </div>
-        
-        <div class="galeria">
-            <div class="row">
-                <div class="column">
-                    <img src="../img/galeria/masajeFacial.png" alt="Sesion de masaje facial">
-                    <img src="../img/galeria/cryoSticks.png" alt="Cryo Sticks"> 
-                    <img src= "../img/galeria/liftingPestanas.png" alt="Lifting de Pestañas">
-                </div>
-                
-                <div class="column">
-                    <img src="../img/galeria/disenoCejas.png" alt="Diseño y perfilado de cejas">
-                    <img src="../img/galeria/rollerFacialDrenante.png" alt="Roller Facial Drenante">
-                    <img src="../img/galeria/guaShaFacial.png" alt="Gua Sha Facial">
-                </div>
-    
-                <div class="column">
-                    <img src="../img/galeria/rollerFacial.png" alt="Roller Facial">
-                    <img src="../img/galeria/masajeFaCombinado.png" alt="Resultados del masaje Facial">
-                    <img src="../img/galeria/cryoterapiaFacial.png" alt="Sesion de Cryoterapia">
-                </div>
-               
-                <div class="column">
-                    <img src="../img/galeria/altaFrecuenciaFacial.png" alt="Sesion de Alta Frecuencia">
-                    <img src="../img/galeria/discosDesmaReu.png" alt="Discos desmaquillantes reutilizables">
-                    <img src="../img/galeria/dermaAmerMasc.png"alt="Dermapiling Americano Masculino">
-                </div>
-            </div>
+
+        <section class="galeria">
+            <a href="#image1">
+                <img id="picOne" src="../img/galeria/masajeFacial.png" alt="Sesion de masaje facial">
+            </a>
+            <a href="#image2">
+                <img id="picTwo" src="../img/galeria/rollerFacialDrenante.png" alt="Roller Facial Drenante">
+            </a>
+            <a href="#image3">
+                <img id="picThree" src="../img/galeria/cryoterapiaFacial.png" alt="Sesion de Cryoterapia">
+            </a>
+            <a href="#image4">
+                <img id="picFour" src="../img/galeria/altaFrecuenciaFacial.png" alt="Sesion de Alta Frecuencia">
+            </a>
+            <a href="#image5">
+                <img id="picFive" src="../img/galeria/cryoSticks.png" alt="Cryo Sticks">
+            </a>
+            <a href="#image6">
+                <img id="picSix" src="../img/galeria/guaShaFacial.png" alt="Gua Sha Facial">
+            </a>
+            <a href="#image7">
+                <img id="picSeven" src="../img/galeria/rollerFacial.png" alt="Roller Facial">
+            </a>
+            <a href="#image8">
+                <img id="picEight" src="../img/galeria/discosDesmaReu.png" alt="Discos desmaquillantes reutilizables">
+            </a>
+            <a href="#image9">
+                <img id="picNine" src="../img/galeria/liftingPestanas.png" alt="Lifting de Pestañas">
+            </a>
+            <a href="#image10">
+                <img id="picTen" src="../img/galeria/disenoCejas.png" alt="Diseño y perfilado de cejas">
+            </a>
+            <a href="#image11">
+                <img id="picEleven" src="../img/galeria/masajeFaCombinado.png" alt="Resultados del masaje Facial">
+            </a>
+            <a href="#image12">
+                <img id="Twelve" src="../img/galeria/dermaAmerMasc.png"alt="Dermapiling Americano Masculino">
+            </a>
+        </section>
+
+        <article class="light-box" id="image1">
+            <a href="#image12" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/masajeFacial.png" alt="Sesion de masaje facial">
+            <a href="#image2" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picOne" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image2">
+            <a href="#image1" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/rollerFacialDrenante.png" alt="Roller Facial Drenante">
+            <a href="#image3" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picTwo" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image3">
+            <a href="#image2" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/cryoterapiaFacial.png" alt="Sesion de Cryoterapia">
+            <a href="#image4" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picThree" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image4">
+            <a href="#image3" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/altaFrecuenciaFacial.png" alt="Sesion de Alta Frecuencia">
+            <a href="#image5" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picFour" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image5">
+            <a href="#image4" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/cryoSticks.png" alt="Cryo Sticks">
+            <a href="#image6" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picFive" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image6">
+            <a href="#image5" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/guaShaFacial.png" alt="Gua Sha Facial">
+            <a href="#image7" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picSix" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image7">
+            <a href="#image6" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/rollerFacial.png" alt="Roller Facial">
+            <a href="#image8" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picSeven" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image8">
+            <a href="#image7" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/discosDesmaReu.png" alt="Discos desmaquillantes reutilizables">
+            <a href="#image9" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picEight" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image9">
+            <a href="#image8" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/liftingPestanas.png" alt="Lifting de Pestañas" >
+            <a href="#image10" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picNine" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image10">
+            <a href="#image9" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/disenoCejas.png" alt="Diseño y perfilado de cejas">
+            <a href="#image11" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picTen" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image11">
+            <a href="#image10" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/masajeFaCombinado.png" alt="Resultados del masaje Facial">
+            <a href="#image12" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#piceleven" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <article class="light-box" id="image12">
+            <a href="#image11" class="arrowl"><i class="fas fa-chevron-left"></i></a>
+            <img src="../img/galeria/dermaAmerMasc.png"alt="Dermapiling Americano Masculino">
+            <a href="#image1" class="arrowr"><i class="fas fa-chevron-right"></i></a>
+            <a href="#picTwelve" class="close"><i class="fas fa-times"></i></a>
+        </article>
+
+        <div class="opacity-50">
+            <a href="#" class="top" data-aos="fade-up" ><i class="fas fa-arrow-up"></i></a>
         </div>
-
-        <script src="https://kit.fontawesome.com/2a2b0023e5.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-
+        
     </main>
     <!-- FIN DEL MAIN -->
     
@@ -81,16 +178,22 @@
     <footer>
         <nav>
             <ul>
-                <li><a href="https://www.facebook.com/kosmetoallen"><i id="face" class="fab fa-facebook"></i></a></li>
-                <li><a href="https://www.instagram.com/kosmetoallen/?hl=es"><i id="ig" class="fab fa-instagram"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=542984673808&text=Kosmeto"><i id="wa" class="fab fa-whatsapp"></i></a></li>
-                <li><a href="/html/contacto.html" target="_blank"><i id="mail" class="far fa-envelope"></i></a></li>
-                <li><a href="html/contacto.html"><i id="map" class="fas fa-map-marker-alt"></i></a></li>
-            </ul>      
+                <li><a href="https://www.facebook.com/kosmetoallen" target="_blank"><i id="face" class="fab fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/kosmetoallen/?hl=es" target="_blank"><i id="ig" class="fab fa-instagram"></i></a></li>
+                <li><a href="https://api.whatsapp.com/send?phone=542984673808&text=Kosmeto" target="_blank"><i id="wa" class="fab fa-whatsapp"></i></a></li>
+                <li><a href="contacto.html"><i id="mail" class="far fa-envelope"></i></a></li>
+                <li><a href="contacto.html#ubicacion"><i id="map" class="fas fa-map-marker-alt"></i></a></li>
+            </ul>    
         </nav>
         <h6>Copiright 2021</h6>
     </footer>
     <!-- FIN DEL FOOTER -->
-    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://kit.fontawesome.com/2a2b0023e5.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+
 </body>
 </html>

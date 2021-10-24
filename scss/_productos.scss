@@ -3,21 +3,12 @@ div.contePadre{
     flex-direction: column;
     align-items: center;
     
-    h1{
-        color: $colorCero;
-        padding:1rem 0;
-        display: inline-block;
-        width: 100%;
-        margin-bottom:1rem;
-        background-color: $colorUno;
-        text-align: center;
-    }
-
     div.conteHijo{
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 90%;
+        margin: 2rem 0;
 
         div.cardsContainer{
             column-gap: 1rem;
@@ -39,7 +30,7 @@ div.contePadre{
 @media only screen and (min-width: 768px) {
     
     div.contePadre{
-        margin: 2rem; 
+         
         h1{
             display:none;
         }

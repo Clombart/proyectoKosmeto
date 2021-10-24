@@ -1,8 +1,16 @@
+/*Estilos Generales + imports*/
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+
 @import "_variables";
+@import "_botones.scss";
 @import "_index";
 @import "_contacto.scss";
 @import "_productos.scss";
-@import "_botones.scss";
 @import "_galeria.scss";
 @import "_sobreMi.scss";
 @import "_tratamientos";
@@ -15,6 +23,24 @@ header, main{
     color: $colorCuatro;
     text-align: center;
 }
+
+h1{
+    color: $colorCero;
+    padding:1rem 0;
+    display: inline-block;
+    width: 100%;
+    background-color: $colorUno;
+}
+
+h2{
+    color:$colorUno;
+}
+
+h6{
+    margin:0 !important;
+}
+
+/* Fin de Estilos Generales + imports*/
 
 /*Empieza Header-nav*/
 
@@ -84,3 +110,23 @@ header, main{
     }
 }
 /*Termina MQ de Nav*/
+
+@media only screen and (min-width: 1024px) {
+    .top{
+        
+        border-width: 0.2rem;
+        font-size: 1.5rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .top{
+        right:3rem;
+        bottom:3rem;
+        font-size: 1.5rem;
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+}

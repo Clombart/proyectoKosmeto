@@ -1,36 +1,61 @@
-@import "_variables";
+/*Empieza Botón UP*/
+
+.top{ 
+    position: fixed;
+    right:2rem;
+    bottom:2rem;
+    border-radius: 50%;
+    border: $colorCero solid 0.1rem;
+    width: 2rem;
+    height: 2rem;
+    background-color:$colorCuatro;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:$colorCero;
+}
+
+.top:hover{
+    background-color: $colorCero;
+    border: $borderbuttons;
+    color:$colorCuatro;
+}
+
+/*Termina Botón UP*/
+
+
+/*Empieza Botón Comprar*/
 
 .botonComprar{
-    color: $colorCuatro;
+    display: inline-block;
+    color: $colorCero;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
     font-family: $fontPpal;
-    background-color: $colorCero;
-    margin: 1rem 2rem;
-    padding:0.15rem 0.75rem;
-    border: $colorCuatro 1px $borderDesign;
-    border-radius: 20px;
+    background-color: $colorCuatro;
+    padding: 0.2rem 1rem;
+    border: $colorCuatro 1px solid;
+    border-radius: 2rem;
+    transition: transform .3s ease-in-out ;
 }
 
 .botonComprar:hover{
-    background-color: $colorCuatro;
-    color:$colorCero;
-    transform: scale(1.2);
-    transition: .3s ease-in-out;
+    background-color: $colorCero;
+    color:$colorCuatro;
+    transform:scale(1.2);
 }
 
 .botonContacto{
     @extend .botonComprar;
+    color:$colorCuatro;
     background-color:$colorBgContacto;
-    margin: 1rem auto;
-    
 }
 
 .botonContacto:hover{
     @extend .botonComprar:hover;
-    color:$colorBgContacto;
-    transition: .3s ease-in-out;
- 
+    background-color: $colorCuatro;
+    color:$colorCero;
 }

@@ -1,18 +1,18 @@
-@import "_variables";
-
 #tituloOculto{
     display: none;
 }
-        
+
 .portada{
     display:flex;
     flex-direction:column;
-    width: 100%;
-    margin:1rem 0;
-
+    
     div.active{
         border:none
     }
+    img{
+        width: 100%;
+    }
+
     div{
         background:linear-gradient($colorUno,$colorDos); 
         width:100%;
@@ -37,11 +37,11 @@
     justify-content: center;
 
     div.contenedormvv{
-        margin: 4rem 0;
+        margin: 3rem 0;
         width:70%;
         display: flex;
         flex-direction: column;
-        border:$colorCuatro 0.2rem double;
+        border:$colorUno 0.2rem double;
         border-top-left-radius:20px;
         border-bottom-right-radius:20px; 
         
@@ -51,11 +51,10 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            margin: 1.5rem 0;
+            margin: 1rem 0;
             
             img{
                 width: 7rem;
-                margin: 1rem;
             }
 
             h2{
@@ -65,10 +64,9 @@
 
             p{
                 display: block;
-                width:80%;
+                width:85%;
                 font-size: 1rem;
-                text-align: justify;
-                margin:0.5rem;
+                text-align: justify; 
             }
         }
     }
@@ -94,9 +92,9 @@
 }
 
 
-/*Empieza MediaQuery min 599px*/
+/*Empieza MediaQuery min 576px*/
 
-@media only screen and (min-width: 599px) {
+@media only screen and (min-width: 576px) {
 
     .portada{
         div{
@@ -105,7 +103,6 @@
                 font-size: 2rem;
                 line-height: 2.5rem;
                 letter-spacing: 0.2rem;
-                text-shadow: $colorSombra 1px 1px;
             }
         }  
     }
@@ -113,10 +110,7 @@
     .alineacion{ 
         div.contenedormvv{
             div{
-                img{
-                    width: 7rem;
-                    margin: 1rem;
-                }
+                
                 h2{
                     font-size: 2rem;
                     margin: 0.2rem 0;
@@ -138,7 +132,7 @@
         }
     }
 }
-/*Termina MediaQuery min 599px*/
+/*Termina MediaQuery min 576px*/
 
 
 /*Empieza MediaQuery min 768px*/
@@ -147,7 +141,7 @@
     .portada{
         div{
             p{ 
-                font-size: 2.5rem;
+                font-size: 2.3rem;
                 line-height: 3rem;
                 letter-spacing: 0.3rem;
                 text-shadow: $colorSombra 1.5px 1.5px;
@@ -186,8 +180,8 @@
 /*Termina MediaQuery min 768px*/
 
 
-/*Empieza MediaQuery min 1023px*/
-@media only screen and (min-width: 1023px) {
+/*Empieza MediaQuery min 1024px*/
+@media only screen and (min-width: 1024px) {
 
     .portada{
         flex-direction:row;
@@ -201,7 +195,8 @@
                 font-size: 2rem;
                 line-height: 2.5rem;
                 letter-spacing: 0.2rem;
-                text-shadow: $colorSombra 1.5px 1.5px;
+                margin: 0 1rem;
+                padding:0;
             }
         }
     }
@@ -211,7 +206,7 @@
             flex-direction: row;
             margin: 3rem 0;
             width: 75%;
-            border:$colorCuatro 0.4rem double;
+            border:$colorUno 0.4rem double;
             align-items: flex-start;
             
             div{
@@ -244,20 +239,22 @@
         }
     } 
 }
-/*Termina MediaQuery min 1023px*/
+/*Termina MediaQuery min 1024px*/
 
-/*Empieza MediaQuery min 1400*/
-@media only screen and (min-width: 1400px) {
+/*Empieza MediaQuery min 1200*/
+@media only screen and (min-width: 1200px) {
     .portada{
         div{
             p{  
-                font-size: 2.5rem;
-                line-height: 2.75rem;
+                font-size: 2.3rem;
+                line-height: 3rem;
                 letter-spacing: 0.3rem;
                 text-shadow: $colorSombra 1.5px 1.5px;
+                margin:0 2rem;
+                padding:0;
             }
         }
     }
 }
 
-/*Termina MediaQuery min 1400*/
+/*Termina MediaQuery min 1200*/
