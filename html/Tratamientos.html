@@ -10,24 +10,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Klee+One:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <title>Kosmeto - Tratamientos Faciales y aparatólogía disponible</title>
 </head>
+
 <body>
     <!-- COMIENZO DEL HEADER -->
     <header id="index">
         <nav class="navbar navbar-expand-md navbar-light ">
             <div id="contenedorGral"class="container-fluid">
-              <a class="navbar-brand" href="../index.html"><img id="logo" src="../img/logo.png" alt="Logo Kosmeto" srcset=""></a>
+              <a class="navbar-brand" href="../index.html"><img id="logo" src="../img/logo.png" alt="Logo Kosmeto"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="menuNavegacion">
                 <ul class="navbar-nav ms-auto me-auto nav-fill">
-                  <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
-                  <li class="nav-item"><a class="nav-link active" href="Tratamientos.html">Tratamientos</a></li>
+                  <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link active" aria-current="page" href="Tratamientos.html">Tratamientos</a></li>
                   <li class="nav-item"><a class="nav-link" href="sobre_mi.html">Sobre Mí</a></li>
                   <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
                   <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
@@ -41,121 +41,167 @@
 
     <!-- COMIENZO DEL MAIN -->
     <main>
-        <div class="contenedorPadre">
+        <div class="padre">
             <h1>Tratamientos</h1>
-            <div class="contenedorHijo">
-                <div class="contenedoresTtos">
-                    <h2 class="fuenteAdicional subtitulo">Faciales</h2>
-                    <section data-aos="fade-right">       
-                        <img src="../img/tratamientos/limpiezaFacial.png" alt="Resultados del Tratamiento de Limpieza Facial">
-                        <div>
-                            <h3 class="fuenteAdicional">Limpieza facial profunda</h3>
-                            <p>Incluye tratamiento con punta de diamante e hidratacion profunda.</p>
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-left">
-                        <img src="../img/tratamientos/shockHidratacion.png" alt="">
-                        <div>
-                            <h3 class="fuenteAdicional">Shock de hidratación</h3>
-                            <p>Incluye electroporación de activos hidratantes e hidratación profunda.</p>
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-right">
-                        <img src="../img/tratamientos/peelingQuimico.png" alt="">
-                        <div>
-                            <h3 class="fuenteAdicional">Peeling químico cosmetológico</h3>
-                            <p>Tratamiento para manchas, arrugas y deshidratación facial. Se utilizan ácidos de porcentajes y ph autorizados para el uso cosmetológico.</p>
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-left">
-                        <img src="../img/tratamientos/dermapilingAmericano.png" alt="Resultados de sesion de Dermapiling americano">
-                        <div>
-                            <h3 class="fuenteAdicional">Dermopiling americano</h3>
-                            <p>Tratamiento que se realiza con bisturí específico para la técnica, y se combinan activos importados y cryoterapia facial.</p>          
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-right">
-                        <img src="../img/tratamientos/masajesFaciales.png" alt="Sesiom de masajes faciales">
-                        <div>
-                            <h3 class="fuenteAdicional">Masaje facial Combinado</h3>
-                            <p>Combina: drenaje facial, digitopuntura, masaje lifting japones y cryoterapia facial</p>
-                        </div>            
-                    </section>
-        
-                    <section data-aos="fade-left">
-                        <img src="../img/tratamientos/cuppinFacial.png" alt="Sesion de Cuppin facial">
-                        <div>
-                            <h3 class="fuenteAdicional">Cupping facial</h3>
-                            <p>Es una técnica con ventosas de la medicina tradicional china. Tonifica músculos faciales, disminuye tensiones, ayuda a fluir emociones estancadas, disminuye dolores de cabeza, atenúa sinusitis y suaviza cicatrices. Se combina con cryoterapia facial.</p>
-                        </div>
-                    </section>
+            <div class="hijo">
+
+                <!-- Sub menú Tratamientos -->
+                <nav class="navegacion">
+                    <ul class="menu">
+                        <li>
+                            <a href="#faciales">Faciales</a>
+                            <ul class="subMenu">
+                                <li><a href="#mfc">masaje facial combinado</a></li>
+                                <li><a href="#sdh">shock de hidratación</a></li>
+                                <li><a href="#lfp">limpieza facial profunda</a></li>
+                                <li><a href="#da">dermopiling americano</a></li>
+                                <li><a href="#pqc">peeling químico cosmetológico</a></li>
+                                <li><a href="#cp">cupping facial</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#esteticaFacial">Estética facial</a>
+                            <ul class="subMenu">
+                                <li><a href="#ldp">lifting de pestañas</a></li>
+                                <li><a href="#dpc">diseño y perfilado de cejas</a></li>
+                                <li><a href="#ltc">laminado y tinte de cejas</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#aparatología">Aparatología</a>
+                            <ul class="subMenu">
+                                <li><a href="#rt">radiofrecuencia tripolar</a></li>
+                                <li><a href="#pd">punta de diamante</a></li>
+                                <li><a href="#af">alta frecuencia</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <span class="linea"> </span>
+                
+                <!-- Descripción Ttos ordenados en categorías -->
+                <!-- Ttos Faciales -->
+                <div class="contenedorTtos">
+                    <h2 class="fuenteAdicional subtitulo" id="faciales">Faciales</h2>
+                    <div class="tipoTto">
+                        <section id="mfc">
+                            <img src="../img/tratamientos/masajesFaciales.png" alt="Sesión de masajes faciales">
+                            <div>
+                                <h3 class="fuenteAdicional">Masaje facial combinado</h3>
+                                <p>Incluye: drenaje facial, digitopuntura, masaje lifting japones y cryoterapia facial.</p>
+                            </div>            
+                        </section>
+            
+                        <section id="sdh">
+                            <img src="../img/tratamientos/shockHidratacion.png" alt="Resultados del tratamiento de hidratación">
+                            <div >
+                                <h3 class="fuenteAdicional">Shock de hidratación</h3>
+                                <p>Incluye electroporación de activos hidratantes e hidratación profunda.</p>
+                            </div>
+                        </section>
+
+                        <section id="lfp">       
+                            <img src="../img/tratamientos/limpiezaFacial.png" alt="Resultados del tratamiento de limpieza facial">
+                            <div>
+                                <h3 class="fuenteAdicional">Limpieza facial profunda</h3>
+                                <p>Incluye tratamiento con punta de diamante e hidratacion profunda.</p>
+                            </div>
+                        </section>
+
+                        <section id="da">
+                            <img src="../img/tratamientos/dermapilingAmericano.png" alt="Resultados de sesión de dermapiling americano">
+                            <div>
+                                <h3 class="fuenteAdicional">Dermopiling americano</h3>
+                                <p>Tratamiento que se realiza con bisturí específico para la técnica. Se combina con activos importados y cryoterapia facial.</p>          
+                            </div>
+                        </section>
+
+                        <section id="pqc">
+                            <img src="../img/tratamientos/peelingQuimico.png" alt="Antes y después del tratamiento">
+                            <div>
+                                <h3 class="fuenteAdicional">Peeling químico cosmetológico</h3>
+                                <p>Tratamiento para manchas, arrugas y deshidratación facial. Se utilizan ácidos de porcentajes y ph autorizados para el uso cosmetológico.</p>
+                            </div>
+                        </section>
+
+                        <section id="cp">
+                            <img src="../img/tratamientos/cuppinFacial.png" alt="Sesión de Cuppin facial">
+                            <div>
+                                <h3 class="fuenteAdicional">Cupping facial</h3>
+                                <p>Técnica con ventosas de la medicina tradicional china. Tonifica músculos faciales, disminuye tensiones, ayuda a fluir emociones estancadas, disminuye dolores de cabeza, atenúa sinusitis y suaviza cicatrices. Se combina con cryoterapia facial.</p>
+                            </div>
+                        </section>
+                    </div>    
+                </div>
+
+                <!-- Ttos de Estética Facial -->
+                <div class="contenedorTtos">
+                    <h2 class="fuenteAdicional subtitulo" id="esteticaFacial">Estética Facial</h2>
+                    <div class="tipoTto">
+                        <section id="ldp">
+                            <img src="../img/tratamientos/liftingPestanas.png" alt="Resultado del lifting de pestañas">
+                            <div>
+                                <h3 class="fuenteAdicional">Lifting de pestañas</h3>
+                                <p> Tratamiento que levanta las pestañas dando un arqueado natural por dos meses. Es hipoalergénico y seguro.
+                                </p>
+                            </div>
+                        </section>
+            
+                        <section id="dpc">
+                            <img src="../img/tratamientos/diPerCejas.png" alt="Resultado de diseño y perfilado de cejas">
+                            <div>
+                                <h3 class="fuenteAdicional">Diseño y perfilado de cejas</h3>
+                                <p>Se perfila la ceja con pincita de depilar, dándole forma de acuerdo a los rasgos del rostro.
+                                </p>
+                            </div>
+                        </section>
+                
+                        <section id="ltc">
+                            <img src="../img/tratamientos/dipeceTinte.png" alt="Tinte de cejas">
+                            <div>
+                                <h3 class="fuenteAdicional">Laminado y tinte de cejas</h3>
+                                <p> Consiste en un alisado semipermanente de la ceja. Recomendado para cejas peinadas hacia abajo o enruladas. Tiene una duracion de dos meses. 
+                                </p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
                 
-                <div class="contenedoresTtos">
-                    <h2 class="fuenteAdicional subtitulo">Aparatología</h2>
-                    <section data-aos="fade-right">
-                        <img src="../img/tratamientos/radioTripo.png" alt="">
-                        <div>
-                            <h3 class="fuenteAdicional">Radiofrecuencia tripolar</h3>
-                            <p>Radiofrecuencia que contiene 3 polos, que emiten calor ayudando a: mejorar arrugas, reducir ojeras y bolsas, levantar el contorno de ojos, eliminar edema y reducir arrugas de expresión. Además dá firmesa y tonifíca.</p>
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-left">
-                        <img src="../img/tratamientos/puntaDiamante.png" alt="">
-                        <div>
-                            <h3 class="fuenteAdicional">Punta de diamante</h3>
-                            <p>Tambien llamado peeling fisico. Renueva la piel elimininando celulas muertas superficiales, ayuda a disminuir arrugas finas y atenúa cicatrices y manchas superficiales.</p>
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-right">
-                        <img src="../img/tratamientos/altaFrecuencia.png" alt="">
-                        <div>
-                            <h3 class="fuenteAdicional">Alta frecuencia</h3>
-                            <p>Ideal para pieles con acné, rosacea, sensibles o irritadas. Produce ozono dando un brillo especial a la piel.</p>
-                        </div>
-                    </section>
-                </div>
-        
-                <div class="contenedoresTtos">
-                    <h2 class="fuenteAdicional subtitulo">Estética Facial</h2>
-                    <section data-aos="fade-left">
-                        <img src="../img/tratamientos/liftingPestanas.png" alt="Resultado del Lifting de Pestañas">
-                        <div>
-                            <h3 class="fuenteAdicional">Lifting de pestañas</h3>
-                            <p> Tratamiento que levanta las pestañas dando un arqueado natural por 2 meses. Es hipoalergénico y seguro.
-                            </p>
-                        </div>
-                    </section>
-        
-                    <section data-aos="fade-right">
-                        <img src="../img/tratamientos/diPerCejas.png" alt="Resultado de Diseño y Perfilado de Cejas">
-                        <div>
-                            <h3 class="fuenteAdicional">Diseño y perfilado de cejas</h3>
-                            <p>Se perfila la ceja con pincita de depilar, dándole forma de acuerdo a los rasgos del rostro.
-                            </p>
-                        </div>
-                    </section>
+                <!-- Ttos con Aparatos -->
+                <div class="contenedorTtos">
+                    <h2 class="fuenteAdicional subtitulo" id="aparatología">Aparatología</h2>
+                    <div class="tipoTto">
+                        <section id="rt">
+                            <img src="../img/tratamientos/radioTripo.png" alt="Equipo de radiofrecuencia tripolar">
+                            <div>
+                                <h3 class="fuenteAdicional">Radiofrecuencia tripolar</h3>
+                                <p>Radiofrecuencia con tres polos, que emiten calor ayudando a: mejorar arrugas, reducir ojeras y bolsas, levantar el contorno de ojos, eliminar edema y reducir arrugas de expresión. Además, da firmesa y tonifíca.</p>
+                            </div>
+                        </section>
             
-                    <section data-aos="fade-left">
-                        <img src="../img/tratamientos/dipeceTinte.png" alt="Tinte de Cejas">
-                        <div>
-                            <h3 class="fuenteAdicional">Laminado y tinte de cejas</h3>
-                            <p>Alisado semipermanente de la ceja que tiene una duracion de 2 meses. Recomendado para cejas peinadas hacia abajo o enruladas.
-                            </p>
-                        </div>
-                    </section>
+                        <section id="pd">
+                            <img src="../img/tratamientos/puntaDiamante.png" alt="Equipo de punta de diamante">
+                            <div>
+                                <h3 class="fuenteAdicional">Punta de diamante</h3>
+                                <p>También llamado peeling físico. Renueva la piel elimininando células muertas superficiales. Ayuda a disminuir arrugas finas y atenúa cicatrices y manchas superficiales.</p>
+                            </div>
+                        </section>
+            
+                        <section id="af">
+                            <img src="../img/tratamientos/altaFrecuencia.png" alt="Equipo de alta frecuencia">
+                            <div>
+                                <h3 class="fuenteAdicional">Alta frecuencia</h3>
+                                <p>Ideal para pieles con acné, rosacea, sensibles o irritadas. Produce ozono dándole un brillo especial a la piel.</p>
+                            </div>
+                        </section>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="opacity-50">
-            <a href="#" class="top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
+            
+            <!--Botón Up-->
+            <div class="opacity-50"> 
+                <a href="#" class="top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
+            </div>
         </div>
     </main>
     <!-- FIN DEL MAIN -->

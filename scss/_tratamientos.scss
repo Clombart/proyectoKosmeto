@@ -1,166 +1,216 @@
-div.contenedorPadre{
-    display: flex; 
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    h1{
-        color: $colorCero;
-        padding:1rem 0;
-        display: inline-block;
-        width: 100%;
-        margin-bottom:1rem;
-        background-color: $colorUno;
-    }
+.navegacion{
+    width: 100%;
+    background: $colorCero;
     
-    div.contenedorHijo{
-        display: flex; 
-        flex-direction: column;
-        align-content: center; 
+    .menu{
+        display: flex;
+        justify-content: space-around;
         align-items: center;
+        list-style-type: none;
+        padding:0;
+        margin:0;
 
-        div.contenedoresTtos{
-            display: flex; 
-            flex-direction: column; 
-            margin: 1.5rem auto; 
-
-            h2.subtitulo{
-                font-size: 1.75rem;
+        li{
+            display:inline-block;
+            position:relative;
+            width: 100%;
+       
+            a{
+                @include anclas($colorUno,none, capitalize, 1.2rem, .5rem 0);
+                display: block;
             }
 
-            section{
-                width:70%;
-                margin: 1rem auto;
-                display: flex; 
-                flex-direction: column; 
-                border-top-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-                border: $colorCuatro double 0.25rem;
+            a:hover{
+                @include aHover ($colorCuatro, $colorDos, 0.5, $transition);
+            }
+        
+            .subMenu{
+                width: 100%;
+                padding:0;
+                background: $colorUno;
+                position:absolute;
+                visibility: hidden;
+                list-style-type: none;
+                opacity:0;
+                transition: $opacity;
                 
-                img{
-                    width: 70%;
-                    margin:1.25rem auto ;
+                a{
+                    @include anclas($colorCero,none, capitalize, 1.2rem, .5rem 0);
+                    display: block;
+                    margin:0;
                 }
-
-                div{
-                    margin: 1rem auto;
-                    h3{
-                        font-weight: 400;
-                        font-size: 1.5rem;
-                        font-family: $fontSpecial;
-                    }
-
-                    p{
-                        font-weight: 600;
-                        font-size: 1rem;
-                        color: $colorTres;
-                        padding:1.5rem;
-                        text-align: center;
-                        margin:0;
-
-                    }
+                a:hover{
+                    @include aHover ($colorCuatro, $colorDos, 0.5, $transition);
                 }
             }
         }
-
+    }
+    
+    .menu li:hover > ul{
+        visibility: visible;
+        opacity: 1;
     }
 }
 
-/*Empieza MediaQuery min 768*/
-@media only screen and (min-width: 768px) {
-    div.contenedorPadre{
-        h1{
-            display:none;
-        }
-        div.contenedorHijo{
-            div.contenedoresTtos{
-                h2.subtitulo{
-                    font-size: 2rem;
-                }
-                section{
-                    div{
-                        h3{
-                            font-size: 1.75rem;
-                        }
+.linea{
+    @include contenedoresAltoDefinido (100%,.2rem);
+    background-color: $colorUno;
+    margin-bottom: 1rem;
+}
 
-                        p{
-                            font-size: 1.25rem;
-                        }
-                    }
-                }    
+.contenedorTtos{
+    display: flex; 
+    flex-direction: column; 
+    margin: 2rem auto; 
+
+    .subtitulo{
+        font-size: 1.5rem;
+        color: $colorUno;   
+    }
+
+    section{
+        width:70%;
+        margin: 1rem auto;
+        display: flex; 
+        flex-direction: column; 
+        border-radius:$borderRadTopBottom;
+        border: $specialBorder;
+        
+        img{
+            width: 70%;
+            margin:1rem auto;
+            border-radius: $borderTopLeftMini;
+        }
+
+        div{
+            margin:0 0 0.5rem 0;
+            h3{
+                font-weight: 400;
+                font-size: 1.25rem;
+                font-family: $fontSpecial;
+                display: inline-block;
+                width: 70%;
+                color:$colorUno;
+                margin:0;
+            }
+
+            p{
+                font-weight: 600;
+                font-size: 1rem;
+                color: $colorTres;
+                padding:0.5rem 1.5rem;
+                text-align: center;
+                margin:0;
+
             }
         }
+    }
+}
+
+/*Empieza MediaQuery min 576*/
+@media only screen and (min-width: 576px){
+    .contenedorTtos{
+        .subtitulo{
+            font-size: 2rem;
+        } 
+        section{
+            width:85%;
+            flex-direction: row; 
+
+            img{
+                width: 50%;
+                margin:1rem;
+                margin-right:0;
+                border-top-left-radius: 1.5rem;
+            }
+    
+            div{
+                margin:auto 0;
+                p{
+                    padding:1rem; 
+                }
+            }
+        }
+    }
+}
+/*Termina MediaQuery min 576*/
+
+/*Empieza MediaQuery min 768*/
+@media only screen and (min-width: 768px){
+    .contenedorTtos{
+        .subtitulo{
+            font-size: 2.25rem;
+        } 
+        section{
+            width:80%;
+            div{
+                h3{
+                    font-size: 1.75rem;
+                    margin:0.5rem auto;
+                }    
+                p{
+                    font-size: 1.2rem;
+                    padding: 0 1rem;
+                    padding-left:2rem;
+                    margin:0.5rem auto;
+                } 
+            }
+        }   
     }
 }
 /*Termina MediaQuery min 768*/
 
-/*Empieza MediaQuery min 992*/
-@media only screen and (min-width: 992px) {
-    div.contenedorPadre{
-        div.contenedorHijo{
-            div.contenedoresTtos{
-                h2.subtitulo{
-                    font-size: 2.5rem;
+@media only screen and (min-width: 992px){
+    .navegacion{
+        .menu{
+            li{
+                a{
+                    font-size: 1.55rem;
                 }
-                section{
-                    width:70%;
-                    margin: 1rem auto;
-                    flex-direction: row; 
-                    align-items: center;
-                   
-                    img{
-                        width: 50%;
-                        margin: 1rem;
+            }
+        }
+    }
+    .contenedorTtos{
+        align-items: center;
+        
+        .subtitulo{
+            font-size: 2.5rem;
+        }
+        .tipoTto{
+            width: 90%;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+           
+            section{
+                width:25%;
+                flex-direction: column; 
+                margin:1.5rem;  
+
+                img{
+                    width: 80%;
+                    margin:2rem auto;
+                    margin-bottom:1rem;
+                }
+
+                div{
+                    margin:0;
+                    
+                    h3{
+                        font-size: 1.75rem; 
+                        display: inline-block;
+                        width: 80%;
                     }
-
-                    div{
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
-                        margin: 1rem auto;
-
-                        h3{
-                            margin:1rem;
-                            font-size: 2rem;
-                        }
-                        
-                        p{
-                            font-size: 1.5rem;
-                        }
+        
+                    p{
+                        font-size: 1.25rem;
+                        padding:1rem;
+                        text-align: center;
+                        margin:0;
                     }
                 }
             }
         }
-    }  
+    }
 }
-/*Termina MediaQuery min 992*/
-
-/*Empieza MediaQuery min 1200*/
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
-    div.contenedorPadre{
-        div.contenedorHijo{
-            div.contenedoresTtos{
-                h2.subtitulo{
-                    font-size: 2.5rem;
-                }
-                section{
-                    width:60%;
-                    margin: 1.5rem auto;
-                   
-                    img{
-                        width: 50%;
-                        margin: 2rem;
-                    }
-
-                    div{ 
-                        margin: 1.5rem auto;
-
-                        h3{
-                            margin:1.5rem;
-                        }
-                    }
-                }
-            }
-        }
-    }  
-}
-/*Termina MediaQuery min 1200*/

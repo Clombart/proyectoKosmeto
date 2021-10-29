@@ -5,18 +5,15 @@
 .portada{
     display:flex;
     flex-direction:column;
-    
     div.active{
         border:none
     }
     img{
         width: 100%;
     }
-
     div{
         background:linear-gradient($colorUno,$colorDos); 
         width:100%;
-
         p{
             font-family: $fontSpecial;
             padding: 1rem;
@@ -31,62 +28,51 @@
     }
 }
 
-.alineacion{
+.contenedormvv{
+    margin: 3rem auto;
+    width:70%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    div.contenedormvv{
-        margin: 3rem 0;
-        width:70%;
+    flex-direction: column;
+    border:$specialBorder;
+    border-radius:$borderRadTopBottom;
+    
+    div{
+        width:100%;
+        margin: 1rem 0;
         display: flex;
         flex-direction: column;
-        border:$colorUno 0.2rem double;
-        border-top-left-radius:20px;
-        border-bottom-right-radius:20px; 
-        
-        div{
-            width:100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 1rem 0;
-            
-            img{
-                width: 7rem;
-            }
-
-            h2{
-                font-size: 1.5;
-                margin: 0.2rem 0;
-            }
-
-            p{
-                display: block;
-                width:85%;
-                font-size: 1rem;
-                text-align: justify; 
-            }
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 6rem;
+            margin: 0;
+        }
+        p{
+            display: block;
+            width:85%;
+            font-size: 1rem;
+            text-align: justify; 
         }
     }
-    .contenedorMarcas{
-        width: 80%;
-        flex-wrap: nowrap;
-        margin: 2rem auto;
-        font-size: 1.75rem;
-        font-style: oblique;
+}
 
-        div{
-            width: 100%;
-            margin: auto;
-            padding: 1rem 0;
+.contenedorMarcas{
+    width: 80%;
+    margin: 2rem auto;
+    flex-wrap: nowrap; 
+    font-size: 1.75rem;
+    font-style: oblique;
+    font-weight: 600; 
 
-            img{
-                height: 6rem;
-                border-radius: 100%;
-                margin:1rem;
-            }
+    .contenedorLogos{
+        width: 100%;
+        margin: auto;
+        padding: 1rem 0;
+
+        .marcas{
+            border-radius: 50%;
+            height: 6rem;
+            margin:1rem;
         }
     }
 }
@@ -107,27 +93,23 @@
         }  
     }
 
-    .alineacion{ 
-        div.contenedormvv{
-            div{
-                
-                h2{
-                    font-size: 2rem;
-                    margin: 0.2rem 0;
-                }
-                p{
-                    font-size: 1.25rem;
-                    margin:1rem;
-                }
+    .contenedormvv{
+        div{
+            h2{
+                font-size: 2rem;
+                margin: 0.2rem 0;
+            }
+            p{
+                font-size: 1.25rem;
+                margin:1rem;
             }
         }
-        .contenedorMarcas{
-            div{
-                padding: 1.5rem 0;
-                img{
-                    height: 7rem;
-                    margin:2rem;
-                }
+    }
+    .contenedorMarcas{
+        .contenedorLogos{
+            padding: 1.5rem 0;
+            .marcas{
+                height: 7rem; 
             }
         }
     }
@@ -139,6 +121,7 @@
 @media only screen and (min-width: 768px) {
 
     .portada{
+        margin-top:0.5rem;
         div{
             p{ 
                 font-size: 2.3rem;
@@ -149,30 +132,36 @@
         } 
     }
 
-    .alineacion{
-        div.contenedormvv{
-            div{
-                img{
-                    width: 8rem;
-                    margin: 1.5rem;
-                }
-                h2{
-                    font-size: 2.25rem;
-                    margin: 0.2rem 0;
-                }
-                p{
-                    font-size: 1.5rem;
-                    margin:1rem;
-                }
+    .contenedormvv{
+        flex-direction: row;
+        width:85%;
+        align-items: flex-start;
+        margin: 3.5rem auto;
+        
+        div{
+            padding:0 1rem;
+            img{
+                width: 7rem;
+                margin: 0.5rem;
+            }
+            h2{
+                font-size: 2rem;
+                margin: 0.2rem 0;
+            }
+            p{
+                font-size: 1.3rem;
+                margin:1rem;
+                text-align: center;
             }
         }
-        .contenedorMarcas{
-            div{
-                padding: 2rem 0;
-                img{
-                    height: 8rem;
-                    margin:2.5rem;
-                }
+    }
+
+    .contenedorMarcas{
+        .contenedorLogos{
+            padding: 2rem 0;
+            .marcas{
+                height: 8rem;
+                margin:2.5rem;
             }
         }
     }  
@@ -187,74 +176,42 @@
         flex-direction:row;
         align-items: center;
         background:linear-gradient($colorUno,$colorDos);
-       
+
         div{
             background:none;
-            
+        
             p{  
                 font-size: 2rem;
                 line-height: 2.5rem;
                 letter-spacing: 0.2rem;
-                margin: 0 1rem;
+                margin:0 1rem;
                 padding:0;
             }
         }
     }
 
-    .alineacion{
-        div.contenedormvv{
-            flex-direction: row;
-            margin: 3rem 0;
-            width: 75%;
-            border:$colorUno 0.4rem double;
-            align-items: flex-start;
-            
-            div{
-                
-                img{
-                    width: 8rem;
-                    margin: 1.2rem;
-                }
-                h2{
-                    font-size: 1.75rem;
-                    margin: 0.2rem 0;
-                }
-                p{
-                    font-size: 1.25rem;
-                    margin:1rem;
-                }
-            }
-        }
-
-        .contenedorMarcas{
-            width: 90%;
-            div{
-                width: 90%;
-                padding: 1rem 0;
-                img{
-                    height: 9rem;
-                    margin:2.5rem;
-                }
+    .contenedormvv{
+        margin: 5rem auto;
+        border:$colorUno 0.4rem double;
+        align-items: flex-start;
+        div{
+            h2{
+                font-size: 2.25rem;
+                margin: 0.2rem 0;
             }
         }
     } 
-}
-/*Termina MediaQuery min 1024px*/
 
-/*Empieza MediaQuery min 1200*/
-@media only screen and (min-width: 1200px) {
-    .portada{
-        div{
-            p{  
-                font-size: 2.3rem;
-                line-height: 3rem;
-                letter-spacing: 0.3rem;
-                text-shadow: $colorSombra 1.5px 1.5px;
-                margin:0 2rem;
-                padding:0;
+    .contenedorMarcas{
+        width: 90%;
+        .contenedorLogos{
+            width: 90%;
+            padding: 1rem 0;
+            .marcas{
+                height: 9rem;
+                margin:2.5rem;
             }
         }
-    }
+    }   
 }
-
-/*Termina MediaQuery min 1200*/
+/*Termina MediaQuery min 1024px*/

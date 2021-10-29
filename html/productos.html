@@ -19,17 +19,17 @@
   <header id="index">
     <nav class="navbar navbar-expand-md navbar-light ">
         <div id="contenedorGral"class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img id="logo" src="../img/logo.png" alt="Logo Kosmeto" srcset=""></a>
+          <a class="navbar-brand" href="../index.html"><img id="logo" src="../img/logo.png" alt="Logo Kosmeto"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="menuNavegacion">
             <ul class="navbar-nav ms-auto me-auto nav-fill">
-              <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="../index.html">Home</a></li>
               <li class="nav-item"><a class="nav-link" href="Tratamientos.html">Tratamientos</a></li>
               <li class="nav-item"><a class="nav-link" href="sobre_mi.html">Sobre Mí</a></li>
               <li class="nav-item"><a class="nav-link" href="galeria.html">Galería</a></li>
-              <li class="nav-item"><a class="nav-link active" href="productos.html">Productos</a></li>
+              <li class="nav-item"><a class="nav-link active" aria-current="page" href="productos.html">Productos</a></li>
               <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
             </ul>
           </div>
@@ -40,9 +40,9 @@
     
   <!-- COMIENZO DEL MAIN -->
   <main>
-    <div class="contePadre">
+    <div class="padre">
       <h1>Productos</h1>
-      <div class="row conteHijo">
+      <div id="hijo-p" class="row hijo">
         <div class="card col-8 col-sm-6 col-md-4 col-lg-4 col-xl-5 col-xll-1 cardsContainer" style="width: 18rem;">
           <img src="../img/productos/rollerFacial.png" class="img-fluid" alt="Roller facial">
           <div class="card-body">
@@ -81,6 +81,7 @@
       </div>
     </div>
     
+    <!--Botón Up-->
     <div class="opacity-50">
       <a href="#" class="top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
     </div>
@@ -100,7 +101,8 @@
     </nav>
     <h6>Copiright 2021</h6>
   </footer>
-  <!-- FIN DEL FOOTER -->  
+  <!-- FIN DEL FOOTER --> 
+   
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

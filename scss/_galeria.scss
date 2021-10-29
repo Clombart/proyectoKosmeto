@@ -1,26 +1,24 @@
 .galeria{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    width: 95%;
-    margin: auto;
-    padding: 2rem 0;
+    margin: 1.5rem;
+    padding: 1rem 0;
     grid-gap: 1.5rem;
     overflow: hidden;
 
     a{
         display: block;
+        width: 100%;
         position: relative;
         overflow: hidden;
-        box-shadow: 0 0 .5rem rgba(0,0,0, .5);
-        border-top-left-radius: 2rem;
-        border-bottom-right-radius: 2rem;
+        box-shadow: $shadow;
+        border-radius:$borderRadTopBottom;
 
         img{
-            width: 100%;
+            @include contenedoresAltoDefinido (100%, 300px);
             vertical-align: top;
-            height: 300px;
             object-fit: cover;
-            transition: transform 0.5s;
+            transition: $transition;
         }
     }
 
@@ -31,35 +29,34 @@
 }
 
 .light-box{
-    position: fixed;
-    top: 0;
-    left:0;
-    background: rgba(0,0,0, .5);
-    width: 100%;
-    height: 100vh;
+    @include contenedoresAltoDefinido (100%, 100vh);
+    @include posicion (fixed, 0, initial, initial, 0);
+    @include display (flex, column, center, unset, unset, center);
+    background: $shadowColor;
     z-index: 1000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform .3s ease-in-out;
+    transition: $transition ease-in-out;
     transform: scale(0);
     
     img{
         width: 100%;
         max-height: 70vh;
     }
+
+    p{
+        text-transform: uppercase;
+        font-weight: bolder;
+        color: $colorCero;
+        margin: 1rem 0;
+    }
     
     .arrowr{
+        @include posicion (absolute, 48vh, 1vw, initial, initial);
         display: block;
         color:$colorCero;
         height: 2rem;
         width: 2rem;
-        position: absolute;
-        right:1vw;
-        top:48vh;
         margin:0.5rem;
         text-align: center;
-        text-decoration: none;
         line-height: 30px;
         border-radius: 50%;
     }
@@ -78,7 +75,8 @@
 
     .arrowr:hover, .arrowl:hover, .close:hover{
         color: $colorCuatro;
-        background-color: rgba(255, 255, 255, 0.75);
+        background-color: $colorCero;
+        opacity: .75;
     }
 }
 
@@ -93,6 +91,7 @@
     }
     .galeria{
         margin:2rem;
+        
     }
     .light-box{
         img{

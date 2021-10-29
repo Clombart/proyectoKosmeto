@@ -1,12 +1,13 @@
-$colorCero:white;
+//Paleta de Colores
+$colorCero:rgb(255, 255, 255);
 $colorUno:rgb(120,199,180); //Oscuro Logo - BG Nav
 $colorDos:rgb(182,238,165); //Claro Logo
-$colorTres:rgb(26, 150, 155); //Hover Nav
+$colorTres:rgb(26, 150, 155); 
 $colorCuatro:rgb(24, 127, 131); //Fuentes
 $colorSombra: rgb(116, 173, 164);
-$colorSombraSM: rgb(11, 51, 53);
 $colorBgContacto:rgb(156,218,177); //Contacto
 
+//Colores Iconos Footer
 $colorFace:rgb(59,89,152);
 $colorIg:#C13584;
 $colorWa:rgb(37,211,102);
@@ -14,11 +15,44 @@ $colorMail:rgb(0,0,255);
 $colorMaps:rgb(219,68,55);
 
 
-$borderNavWidth:0.1rem;
-$borderDesign:solid;
-$borderRadius: 0.5rem;
-
+//Fuentes
 $fontPpal: 'Klee One', cursive;
 $fontSpecial: 'Kaushan Script', cursive;
 
-$borderbuttons: $colorCuatro solid 0.1rem;
+
+//Border-Radius Grandee:
+$borderRadTopBottom: 2rem 0;
+$borderTopLeft:  2rem 0 0;
+$borderBottomRigth: 0 0 2rem;
+
+//Border-Radius Mediano
+$borderRadTopBottomMed: 1.5rem 0; // Fotos Productos
+
+//Border-Radius Chico
+$borderRadTopBottomCampos: 1rem 0; // Campos Formulario Contactos
+$borderTopLeftMini: 1rem 0 0; // Fotos Ttos
+$bordertop: 1rem 1rem 0 0; // Hover Nav Ppal
+
+
+//Bordes Especial
+$specialBorder: $colorUno  0.25rem double; // Tratamientos
+
+
+//Bordes
+$borderCuatro: $colorCuatro 0.1rem solid; //Productos-Cards
+$borderUno: $colorUno 0.1rem solid; //Contactos-Form
+$borderCero: $colorCero solid 0.1rem;
+
+
+//Sombras
+$shadowColor:rgba(0,0,0, .65);
+$shadow:0 0 .5rem $shadowColor;
+
+
+//transiciones
+$transition: transform .5s;
+$opacity: opacity 1s;
+
+
+//animacion
+$animation: aparece 2s;

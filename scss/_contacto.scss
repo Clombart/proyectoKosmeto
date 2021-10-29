@@ -1,128 +1,53 @@
-div.formato{
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-}
+#hijo-c{
+    @include contenedores (75%,3rem,$borderRadTopBottom);
+    box-shadow:$shadow;
 
-.form{
-    width: 90%;
-    line-height: 2rem;
-    border: $colorUno 1px solid;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 10px;
-    
-}
-
-div.padre{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    div.hijo{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 90%;
-        margin: 2rem 0;
+    form{
+        @include contenedores (100%,auto,$borderTopLeft);
+        background-color:$colorBgContacto;
+        justify-content: center;
         
-        form{
-            width: 100%;
-            height: 100%;
-            background-color: $colorBgContacto;
-            border-bottom-right-radius: 20px;
-            border-top-left-radius: 20px;
-            background-color:$colorBgContacto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        
-        div{
-            display:flex;
-            justify-content: center;
-            align-items: center; 
-            width: 100%;
-        }
+        .formato{
+            @include contenedorFlex (flex, column, center, center);
 
-        div.map{
-            width: 100%;
-            height: 100%;
-            margin:1rem;
-            justify-content: center;
-            iframe.mapa{
-                display: block;
-                width: 100%;
-                height: 250px;
-                margin:1rem auto;
-                border-bottom-right-radius:10px;
-                border-top-left-radius:10px;
+            .campos{
+                @include contenedores (70%,unset,$borderRadTopBottomCampos);
+                line-height: 2rem;
+                border:$borderUno;
             }
         }
     }
+    .contenedorMapa{
+        @include contenedoresAltoDefinido (100%,250px);
+        
+        .mapa{
+            @include contenedoresAltoDefinido (100%,100%);
+            border-radius:$borderBottomRigth;
+        }
+    }  
 }
 
 /*Empieza MediaQuery min 768*/
-@media only screen and (min-width: 768px) {
-    div.padre{
-        margin: 2rem; 
-        margin:1.5rem;
-        h1{
-            display:none;
+@media only screen and (min-width: 768px){
+    #hijo-c{
+        @include contenedoresAltoDefinido (90%,590px);
+        flex-direction: row;
+        animation: $animation;
+
+        form{
+            @include contenedoresAltoDefinido (50%,100%);
+            @include contenedorFlex (flex, column, center, center);
+            .formato{
+                width: 100%;
+            }
         }
-        div.hijo{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: nowrap;      
-            width: 100%;
-            height: 630px;
-            box-shadow: 0 0 .5rem rgba(0,0,0, .5);
-            border-top-left-radius: 20px;
-            border-bottom-right-radius: 20px;
-
-            form{
-                width: 100%;
-                background-color: $colorBgContacto;
-                border-bottom-right-radius: 0px;
-                border-top-left-radius: 20px;
-                background-color:$colorBgContacto;
-                display: flex;
-                flex-direction: column;    
-                justify-content: center;
-            }
-
-            div{
-                width: 100%;
-               
-            }
-    
-            div.map{
-                width: 100%;
-                margin:0;
+        .contenedorMapa{
+            @include contenedoresAltoDefinido (50%,100%);
+            .mapa{
                 height: 100%;
-               
-                justify-content: center;
-                iframe.mapa{
-                    width: 100%;
-                    height: 100%;
-                    border-bottom-right-radius:20px;
-                    border-top-left-radius:0px;
-                }
             }
-        }
-    }
-}   
-/*Termina MediaQuery min 768*/
-
-
-
-/*Empieza MediaQuery min 1200*/
-@media only screen and (min-width: 1200px) {
-   
-    div.padre{
-        div.hijo{     
-            width: 80%;
-        }    
+        } 
     }
 }
-/*Termina MediaQuery min 1200*/
+
+/*Termina MediaQuery min 768*/

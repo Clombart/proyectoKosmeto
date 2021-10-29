@@ -1,6 +1,5 @@
 footer{
     background:linear-gradient($colorUno,$colorDos);
-    border-top: $borderDesign 0.5rem $colorUno;
     nav{
         ul{
             display:flex;
@@ -13,8 +12,7 @@ footer{
                     i{font-size: 2rem;
                         color:$colorCero;
                         margin:1rem;
-                        transition: 1s all;
-
+                        transition: .5s all;
                     }
                 }
             }
@@ -22,12 +20,9 @@ footer{
     }
     h6{
         font-size: 0.75rem;
-        font-weight: 400; 
         padding-bottom: 0.5rem;
-        text-align: center;
         line-height: 1rem;
     } 
-
 }
 
 #face:hover{

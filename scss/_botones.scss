@@ -1,50 +1,33 @@
 /*Empieza Botón UP*/
 
 .top{ 
-    position: fixed;
-    right:2rem;
-    bottom:2rem;
-    border-radius: 50%;
-    border: $colorCero solid 0.1rem;
-    width: 2rem;
-    height: 2rem;
-    background-color:$colorCuatro;
-    text-decoration: none;
-    display: flex;
+    @include formatoBoton($colorCero, $colorCuatro, 50%, $borderCero,flex);
+    @include posicion(fixed,initial, 1.5rem, 1.5rem, initial);
+    @include contenedoresAltoDefinido (2.5rem, 2.5rem,); //tamaño botón
     justify-content: center;
     align-items: center;
-    color:$colorCero;
+    text-decoration: none;
 }
 
 .top:hover{
-    background-color: $colorCero;
-    border: $borderbuttons;
-    color:$colorCuatro;
+    @include botonHover ($colorCuatro,$colorCero,$borderCuatro,$transition) 
 }
 
 /*Termina Botón UP*/
 
 
-/*Empieza Botón Comprar*/
+/*Empieza Botones Productos y Contacto*/
 
 .botonComprar{
-    display: inline-block;
-    color: $colorCero;
+    @include formatoBoton($colorCero, $colorCuatro, 2rem, $borderCuatro,inline-block);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1rem;
-    font-weight: 700;
-    font-family: $fontPpal;
-    background-color: $colorCuatro;
     padding: 0.2rem 1rem;
-    border: $colorCuatro 1px solid;
-    border-radius: 2rem;
-    transition: transform .3s ease-in-out ;
+    transition: $transition ease-in-out ;
 }
 
 .botonComprar:hover{
-    background-color: $colorCero;
-    color:$colorCuatro;
+    @extend .top:hover;
     transform:scale(1.2);
 }
 
@@ -55,7 +38,27 @@
 }
 
 .botonContacto:hover{
-    @extend .botonComprar:hover;
-    background-color: $colorCuatro;
-    color:$colorCero;
+    @include botonHover ($colorCero, $colorCuatro,initial,scale(1.2));
 }
+
+/*Termina Botones Productos y Contacto*/
+
+
+/* Empieza MediaQuery botón UP*/
+
+@media only screen and (min-width: 768px) {
+    .top{
+        @include posicion (fixed,initial, 2rem, 2rem, initial);
+        @include contenedoresAltoDefinido (3rem, 3rem); //tamaño botón
+        font-size: 1.25rem;
+        border-width: 0.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .top{
+        @include contenedoresAltoDefinido (4rem, 4rem); //tamaño botón
+        font-size: 1.5rem;
+    }
+}
+/* Termina MediaQuery botón UP*/

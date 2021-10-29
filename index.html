@@ -20,7 +20,7 @@
     <header id="index">
         <nav class="navbar navbar-expand-md navbar-light ">
             <div id="contenedorGral"class="container-fluid">
-              <a class="navbar-brand" href="#index"><img id="logo" src="img/logo.png" alt="Logo Kosmeto" srcset=""></a>
+              <a class="navbar-brand" href="#index"><img id="logo" src="img/logo.png" alt="Logo Kosmeto"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
@@ -37,33 +37,35 @@
             </div>
         </nav>
     </header>
-
     <!-- FIN DEL HEADER -->
     
     <!-- COMIENZO DEL MAIN -->
     <main>
-        <div class="container-fluid"></div>
+        <div class="padre"></div>
             <h1 id="tituloOculto">Kosmeto, Estética y Cosmetología</h1>
-            <div class="portada">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="img/home/indexUno.png" alt="Consultorio">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="img/home/indexDos.png" alt="Sesion en consultorio">
-                      </div>
+            <div class="hijo">
+                <!-- Portada con carusel -->
+                <div class="portada">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="img/home/indexUno.png" alt="Consultorio">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="img/home/indexDos.png" alt="Sesion en consultorio">
+                          </div>
+                        </div>
+                    </div>
+               
+                    <div class="d-block">
+                        <p>Kosmeto te brinda un servicio integral cosmetológico facial:
+                            tratamientos personalizados, asesoramiento y los mejores productos.
+                            Es un espacio para el cuidado de tu piel.
+                        </p>
                     </div>
                 </div>
-
-                <div class="d-block">
-                    <p>Kosmeto te brinda un servicio integral cosmetológico facial:
-                        tratamientos personalizados, asesoramiento y los mejores productos.
-                        Es un espacio para el cuidado de tu piel.
-                    </p>
-                </div>
-            </div>
-            <div class="alineacion">
+            
+                <!-- Misión, Visión, Valores -->
                 <div class="contenedormvv">
                     <div>
                         <img src="img/home/mision.png" alt="cohete">
@@ -83,7 +85,8 @@
                         <p>Honestidad, pasión por el cuidado de la salud de la piel, profesionalismo y mejora continua.</p>
                     </div>       
                 </div>
-        
+                
+                <!-- Marcas Utilizadas -->
                 <div class="contenedorMarcas">
                     <h2>Marcas Utilizadas:</h2>
                     <div class="contenedorLogos">
@@ -91,16 +94,16 @@
                         <img class="marcas" src="img/home/carthage.png" alt="Carthage">
                         <img class="marcas" src="img/home/lidherma.png" alt="Lidherma">
                         <img class="marcas" src="img/home/hidraet.png" alt="Idraet">
-                     </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="opacity-50">
-            <a href="#" class="top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
+
+            <!-- Botón up -->
+            <div class="opacity-50">
+                <a href="#" class="top" data-aos="fade-up"><i class="fas fa-arrow-up"></i></a>
+            </div>
         </div>
     </main>
-    
     <!-- FIN DEL MAIN -->
 
     <!-- COMIENZO DEL FOOTER -->
