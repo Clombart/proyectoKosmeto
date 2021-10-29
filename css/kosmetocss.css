@@ -555,7 +555,7 @@ h6 {
   .sobre {
     display: grid;
     flex-direction: unset;
-    justify-content: unset;
+    justify-content: center;
     align-content: center;
     justify-items: center;
     align-items: flex-start;

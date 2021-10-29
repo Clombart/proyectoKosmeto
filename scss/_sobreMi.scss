@@ -46,7 +46,7 @@
 
 @media only screen and (min-width: 992px){
     .sobre{
-        @include display (grid, unset, unset, center, center,flex-start);
+        @include display (grid, unset, center, center, center,flex-start);
         grid-template-columns: 47% 47%;
         grid-template-rows:15% 80%;
         grid-template-areas: "imagen titulo" 
